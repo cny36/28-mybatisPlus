@@ -1,0 +1,19 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+# 数据库配置
+spring:
+  application:
+    name: mybatis-plus
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/28-mybatisplus?useUnicode=true&serverTimezone=UTC&useSSL=false&characterEncoding=utf-8
+
+# mybatis-plus 配置
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
